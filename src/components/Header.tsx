@@ -14,17 +14,19 @@ const Header = () => {
           Rodrigo<span className="text-accent">.</span></h1>
         </Link>
 
+        {/* desktop nav & hire me button*/}
+        <div className="hidden xl:flex items-center gap-8">
+          <Nav />
+          <Link href={"/contact"}>
+          <Button>Hire me</Button>
+          </Link>
+        </div>
 
-          {/* desktop nav & hire me button*/}
-          <div className="hidden xl:flex items-center gap-8 bg-pink-50/20">
-           <Nav />
-           <Link href={"/contact"}>
-            <Button>Hire me</Button>
-           </Link>
-          </div>
+        {/* mobile nav */}
+        <div className="xl:hidden">
+          mobile nav
+        </div>
 
-          {/* mobile nav */}
-          <div className="xl:hidden">mobile nav</div>
       </div>
     </header>
   )
