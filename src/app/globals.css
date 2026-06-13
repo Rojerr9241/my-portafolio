@@ -50,7 +50,7 @@
   --font-primary: var(--font-jetbrainsMono);
   --color-primary: #1c1c22;
   --color-accent: #0080ff;
-  --color-accent-hover: #00BFFF;
+  --color-accent-hover: #006bd6;
 }
 
 :root {
@@ -131,5 +131,14 @@
   }
   html {
     @apply font-sans;
+  }
+  .h1 {
+    @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
+  }
+  .h2 {
+    @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+  }
+  .h3 {
+    @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
   }
 }
