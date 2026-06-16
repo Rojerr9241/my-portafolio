@@ -1,6 +1,6 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { SiGmail, SiCredly } from "react-icons/si";
 
 const socials = [
     {
@@ -14,15 +14,15 @@ const socials = [
         url: "https://www.linkedin.com/in/rodrigo-negrete/"
     },
     {
-        name: "YouTube",
-        icon: <FaYoutube className="size-5" />,
-        url: "https://youtube.com"
-    },
-    {
         name: "Email",
         icon: <SiGmail className="size-5" />,
         url: "mailto:rodrigo.negretejuarez@gmail.com"
-    }
+    },
+    {
+        name: "Credly",
+        icon: <SiCredly className="size-5" />,
+        url: "https://www.credly.com/users/rodrigo-negrete-juarez"
+    },
 ];
 
 const Social = ({ containerStyles, iconStyles }: { containerStyles: string; iconStyles: string }) => {
