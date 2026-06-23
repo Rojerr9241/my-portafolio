@@ -1,6 +1,11 @@
 const Services = () => {
   return (
-    <div>Services page</div>
+    <section className="h-full flex items-center justify-center">
+      <div className="text-center space-y-2">
+        <h2 className="text-4xl font-semibold">Services</h2>
+        <p className="text-white/60">Site under construction — check back soon.</p>
+      </div>
+    </section>
   )
 }
 
